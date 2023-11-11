@@ -1,0 +1,405 @@
+/* Head  */
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg1);
+    padding: 10px 50px;
+}
+
+.head .logo img {
+    height: 50px;
+    width: auto;
+}
+
+.head .logo span {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.head .logo a {
+    display: flex;
+    align-items: center;
+}
+
+.head .menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.head .menu ul a {
+    padding: 100% 20px;
+    font-weight: 600;
+}
+
+.head .menu ul a:hover {
+    background-color: white;
+}
+
+.head .social ul {
+    display: flex;
+    list-style: none;
+}
+
+.head .social ul a {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    border-radius: 15px;
+}
+
+.head .social ul a i {
+    font-size: 25px;
+}
+
+.head .bars {
+    display: none;
+}
+@media (max-width: 994px) {
+    .head .social {
+        display: none;
+    }
+    .head .menu {
+        display: none;
+    }
+    .head .bars {
+        display: block;
+        font-size: 30px;
+    }
+    .head {
+        padding: 20px 10px;
+    }
+}
+/* End head */
+
+
+/* section 1  */
+.section1 {
+    background: url(../image/background1.jpg) center ;
+    padding: 100px 0;
+    height: 570px;
+    display: flex;
+    position: relative;
+}
+
+.section1::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.section1 .container .text {
+    position: relative;
+}
+
+.section1 .container .text h3 {
+    color: white;
+}
+
+.section1 .container .text h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.section1 .container .text span {
+    color: white;
+    line-height: 25px;
+}
+
+.section1 .container .but {
+    position: relative;
+    margin-top: 30px;
+    
+
+}
+
+.section1 .container .but .button1 {
+    padding: 20px 55px;
+    background-color: var(--other2);
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 20px;
+    border: grey 1px solid;
+    display: inline-block;
+
+}
+
+.section1 .container .but .button1:hover {
+    background-color: white;
+}
+
+.section1 .container .but .button2 {
+    color: white;
+    padding: 20px 55px;
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 5px;
+    border: grey 1px solid;
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+.section1 .container .but .button2:hover {
+    color: var(--text-color);
+    background-color: var(--other2);
+}
+
+@media (max-width: 994px){
+    .section1 .container {
+        margin-left: 100px;
+    }
+}
+@media (max-width: 766px) {
+    .section1 .container {
+        text-align: center;
+        margin : auto;
+    }
+}
+@media (max-width: 650px) {
+    .section1 .container h1{
+        font-size: larger;
+    }
+    .section1 .container {
+        text-align: center;
+    }
+    .section1 .container .but .button2 {
+        margin-top: 10px;
+    }
+}
+
+/* End section 1 */
+
+.section2 {
+    padding: 100px 0;
+    background-color: var(--bg1);
+}
+
+.section2 .container {
+    display: flex;
+}
+
+.section2 .container .image {
+    width: 40%;
+    margin-right: 7%;
+}
+
+.section2 .container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.section2 .container .text {
+    flex-grow: 1;
+}
+
+.section2 .container .text h3 {
+    color: grey;
+}
+
+.section2 .container .text h1 {
+    font-size: 65px;
+    margin: 0;
+}
+
+.section2 .container .feature ul {
+    list-style: none;
+    display: flex;
+}
+
+.section2 .container .feature .feature1 {
+    display: flex;
+    width: 140px;
+    height: 140px;
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.section2 .container .feature .feature1 i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: var(--other1);
+}
+
+.section2 .container .feature p {
+    font-size: 20px;
+    color: grey;
+    margin-top: 20px;
+}
+
+.section2 .container .feature .button {
+    padding: 20px 55px;
+    display: inline-block;
+    background-color: var(--other2);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.section2 .container .feature .button:hover {
+    background-color: white;
+}
+
+@media (max-width: 994px) {
+    .section2 .container .image {
+        width: 100%;
+    }
+
+    .section2 .container .content {
+        width: 100%;
+    }
+    .section2 .container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 766px) {
+    .section2 .container {
+        text-align: center;
+    }
+    .section2 .container .feature ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section2 .container .feature .feature1 {
+        margin-top: 20px;
+    }
+}
+
+/* Section 3 */
+.section3 {
+    background-color: var(--bg1);
+    padding: 100px 0;
+
+}
+
+.section3 .inner-wrap {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.section3 .inner-wrap .image {
+    width: 35%;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.section3 .inner-wrap .image img {
+    width: 100%;
+    height: auto;
+    margin-top: -60px;
+    margin-bottom: -3px;
+}
+
+.section3 .inner-wrap .text {
+    flex: 1;
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+.section3 .inner-wrap .text .sub {
+    color: grey;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.section3 .inner-wrap .text .main {
+    font-weight: 600;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+/* End Section 3 */
+
+/* Contact form */
+
+.form .inner-form {
+    background-color: #DCE8EB;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.form .inner-form .title .sub {
+    color: grey;
+    font-size: 20px;
+}
+
+.form .inner-form .title .main {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.form .inner-form .input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form .inner-form .input input {
+    height: 50px;
+    width: 32.5%;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    outline: 0;
+    
+}
+
+.form .inner-form .input textarea {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    outline: 0;
+}
+
+.form .inner-form .button {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.form .inner-form .button button {
+    padding: 20px 30px;
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+}
+
+.form .inner-form .button button:hover {
+    background-color: var(--other2);
+    color: black;
+}
+
+
+
+/* End Contact form */
